@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+header{
+    background-color: rgb(28, 28, 28);
+    padding: 1rem 4rem;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ #contactanos{
+  
+    outline-offset: 3px;
+    background-color: rgb(74, 72, 72);
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-family: "Montserrat", serif;
+    text-transform: uppercase;
+    font-size: .7rem;
+   
+}
+
+#contactanos:hover {
+    background-color: rgb(38, 37, 37);
+}
+
+
+#logo{
+    width: 70px;
+    height: 70px;
+    background-image: url('./imagenes/logo.png');
+    font-size: 0;
+    margin: 20px;
+}
+
+
+
+#banner{
+    background:  url('./imagenes/banner.jpg') center center;
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 105px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#banner h1{
+    font-size: 4rem;
+    font-family: "Montserrat", serif;
+    margin-bottom: .2rem;
+    margin-top: .3rem;
+
+}
+
+#banner p{
+   color: rgb(201, 68, 245);
+    font-size: 1rem;
+    font-family: "Montserrat", serif;
+}
+
+#servicios {
+    padding: 50px 30px;
+    background-color: rgb(28, 28, 28) ; 
+    
+}
+
+
+
+#servicios .serviciosarticle {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#servicios article {
+    width: 100%;
+   
+}
+
+
+#servicios img {
+    width: 100%;
+    height: auto;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+#servicios .subtitulo {
+    color: rgb(201, 68, 245);
+    margin: 2rem auto .5rem auto; 
+    font-family: "Montserrat", serif;
+    text-transform: uppercase;
+    font-size: .7rem;
+    }
+
+#servicios h3 {
+    font-family: "Montserrat", serif;
+    color:#ced1d3;
+    margin-bottom: .7rem;
+    font-size: 2rem;
+}
+
+
+#servicios .texto {
+    color: rgb(198, 199, 199);
+    font-family: "Montserrat", sans-serif;
+    font-size: .9rem;
+    line-height: 1.5;
+}
+
+#quienesomos {
+    background-color:#2C113C ;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#quienesomos div {
+    width: 100%;
+    padding:50px 30px ;
+    
+}
+
+#quienesomos h2 {
+    font-size: 4rem;
+    color:  #ced1d3;
+    font-family: "Montserrat", serif;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    
+  
+}
+
+#quienesomos p {
+    color: rgb(198, 199, 199);
+    font-family: "Montserrat", sans-serif;
+    font-size: .9rem;
+    line-height: 1.8;
+    
+}
+
+#quienesomos img{
+    width: 100%;
+    height: auto;
+}
+
+#clientes {
+    padding: 50px 30px;
+    background-color: rgb(28, 28, 28);
+    text-align: center;
+}
+
+#clientes h2{
+    font-size: 2.5rem;
+    font-family: "montserrat" , serif;
+    line-height: 1;
+    margin-bottom: 15px;
+    color: #ced1d3;
+}
+
+#clientes .clientestexto{
+    font-size: 1rem;
+    margin-bottom: 5rem;
+   color:rgb(201, 68, 245) ; 
+   font-family: "montserrat" , sans-serif;
+}
+
+#clientes div {
+   
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    
+}
+
+#clientes figure{
+    width: 100%;
+}
+
+#clientes img {
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+
+#clientes h3 {
+    font-family: "Montserrat", serif;
+    color:#ced1d3;
+    margin: .8rem  auto .4rem  auto;
+    font-size: 2rem;
+}
+
+#clientes h4 {
+    color: rgb(201, 68, 245);
+  margin-bottom: 1rem; 
+    font-family: "Montserrat", serif;
+    text-transform: uppercase;
+    font-size: .7rem;
+}
+
+#clientes p {
+    color: rgb(198, 199, 199);
+    font-family: "Montserrat", sans-serif;
+    font-size: .9rem;
+    line-height: 1.5;
+}
+
+footer{
+    background-color:  #2C113C;
+    color: #a5a5a5;
+    text-align: center;
+    padding: 30px;
+}
+
+footer p{
+    margin-top: 20px;
+}
+
+#redes ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 20px;
+}
+
+#redes a{
+    color: #a5a5a5;
+    font-size: 1.5rem;
+}
+
+footer hr{
+    width: 60%;
+    margin: 20px auto;
+    color: #a5a5a5;
+}
+
+
+@media screen and (min-width: 800px){
+    #servicios .serviciosarticle{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #servicios article{
+        width: 47%;
+    }
+#servicios h3 {
+    font-size: 1.6rem;
+}
+
+    #clientes div{
+        flex-direction: row;
+        text-align: start;
+    }
+    
+    #clientes h3 {
+        font-size: 1.7rem;
+    }
+
+    #quienesomos h2 {
+        text-align: center;
+    }
+
+
+    #quienesomos p {
+        padding: 0 2rem;
+        text-align: center;
+    }
+}
+
+
+/* pc */
+@media screen and (min-width: 1200px){
+   
+
+    #servicios .serviciosarticle{
+        flex-wrap: nowrap;
+    }
+
+    #servicios h3 {
+        font-size: 1.5rem ;
+        margin-bottom: 1rem;
+        margin-top: .6rem;
+    }
+
+    #quienesomos{
+        flex-direction: row;
+        align-items: center;
+    }    
+
+#quienesomos h2 {
+    font-size: 3.5rem;
+}
+
+    #quienesomos div{
+        width: 100%;
+        padding: 40px 60px;
+        margin: auto;
+        text-align: center
+    }
+
+   
+
+    #clientes div{
+       width: 80%;
+        text-align: center;
+        
+    }
+}
